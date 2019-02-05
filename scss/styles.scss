@@ -650,6 +650,12 @@ footer {
         color: $heading;
         margin-bottom: 50px;
     }
+
+    iframe
+    {
+        width: 896;
+        height: 504; 
+    }
 }
 
 .project {
@@ -985,6 +991,10 @@ footer {
         padding: 30px 15px;
         top: auto;
         transform: none;
+        iframe
+        {
+            width: 100%;
+        }
     }
 
     footer {
