@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a class="no-scroll" href="https://github.com/stuartdadams" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a class="no-scroll" href="https://linkedin.com/in/stuartdadams" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a class="no-scroll" href="https://twitter.com/stuartdadams" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Stuart Adams</h1>
+            <h2>Software Engineer</h2>
+            <a href="documents/CV.pdf" class="btn-rounded-white">Download CV</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/pbr.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Real-Time Physically-Based Rendering (2019)</h3>
+                        <p>
+                            My honours project is a physically-based renderer called Moka. It is written in C++17 and OpenGL, and will demonstrate the many techniques employed by a commercial game engine to achieve photorealistic rendering of materials in real-time.
+                            It features a microfacet BRDF based on UE4's model as described by Brian Karis. Irradiance environment mapping is used for the ambient and diffuse terms, while Karis' split-sum approximation is used for specular image based lighting.
+                        </p>
+                        <a href="https://github.com/StuartDAdams/moka">View On GitHub</a><br>
+                        <a href="documents/Interim Report.pdf">View Interim Report</a>
+                        <iframe width="565" height="315" src="https://www.youtube.com/embed/omDgQNmG1N0" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/redmetal.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>RedMetal (2018)</h3>
+                        <p>
+                                A high-speed zero-gravity racing game for four players. The game features a late 90's aesthetic reminiscent of WipeOut. Players must complete a set number of laps before their oponents to win, however each ship is extremely fragile and will explode upon strong impacts with other players or the environment, losing precious time. Particular care was taken to create a driving experience similair to that of a comercial racing game, with smooth camera effects and an FOV that increases with speed.
+                        </p>
+                        <a href="https://github.com/StuartDAdams/RedMetal">View On GitHub</a>
+                        <iframe width="565" height="315" src="https://www.youtube.com/embed/vzRYqJVs8fw" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/tinybox.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>TinyBox (2018)</h3>
+                        <p>
+                                TinyBox is the game engine that powers red metal. It is a custom C++ framework that targets both Windows and Linux desktops. It uses the excellent SDL2 library as a platform abstraction layer, allowing us to target both platforms with minimal code changes. 
+                                A custom OpenGL renderer is used for all rendering, while bullet is used for phyiscs. The engine features high-level 2D and 3D graphics facilities. It also defines an entity component system modelled after the Unity engine, which allows quick prototyping and loose coupling.
+                        </p>
+                        <a href="https://github.com/StuartDAdams/TinyBox">View On GitHub</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/advanced-graphics-1.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Advanced Graphics 1 (2018)</h3>
+                        <p>
+                            A simple graphics project demonstrating the blinn-phong shading model with normal mapping, multiple light casters and point-light PCF shadow mapping.
+                        </p>
+                        <a href="https://github.com/StuartDAdams/BlinnPhongGame">View On GitHub</a>
+                        <iframe width="565" height="315" src="https://www.youtube.com/embed/o55iPkyaiM8" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/advanced-graphics-2.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Advanced Graphics 2 (2018)</h3>
+                        <p>
+                            An expansion upon the previous graphics project that integrated with the Oculus SDK for VR support. Bullet physics was introduced to add an interactive element to the project, allowing players to push around game objects in the scene with the motion controllers. Parallax occlusion mapping was introduced alongside perspective PCF shadow mapping for the player's handheld torch.
+                        </p>
+                        <a href="https://github.com/Bensuo/VRDemo">View On GitHub</a>
+                        <iframe width="565" height="315" src="https://www.youtube.com/embed/B04KEncuXtU" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/ipm.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Interactive Physical Modelling (2017)</h3>
+                        <p>
+                            An impulse-based 2D rigid body dynamics engine written in C++. This project demonstrates simple collision detection between AABBs and OBBs alongside an implementation of Erin Catto's simplified impulse-based physics model.</p>
+                        <a href="https://github.com/StuartDAdams/Polaris2D">View On GitHub</a>
+                        <iframe width="565" height="315" src="https://www.youtube.com/embed/eYaASk3oaNI" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/neon-knights.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Neon Knights (2016)</h3>
+                        <p>
+                            A 2D side-scrolling fighting party game for up to four players. Featuring a roster of four
+                            characters with unique abilities, the rules of each match in this game are picked at
+                            random. Settings, gamemodes and a wildcard element are randomly selected by the players
+                            using a slot machine before each match. This game brought my teammates and I to the UK
+                            national finals of the Microsoft Imagine Cup Games competition!<br><br>
+
+                            I developed this game as part of a team of two programmers and an artist during my HND. It
+                            was difficult to balance the demands of the course with the competition, but it was a lot
+                            of fun and I gained a lot of experience working in a project team because of it!
+                        </p>
+                        <iframe width="565" height="315" src="https://www.youtube.com/embed/UlaJ_qDk618" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Hi! My name is Stuart Adams, and I am a software engineer. I will be graduating in May from the
+                        University of the West of Scotland. I'm a dedicated programmer always looking to better myself.<br><br>
+
+                        My main interests are graphics, gameplay and engine programming. If it involves writing
+                        high-performance C++, I'm into it! I enjoy learning new low-level system APIs, creating
+                        high-quality graphics and creating polished gameplay experiences. Programming is awesome!<br><br>
+
+                        I love helping people and passing on what I've learned. I founded the new UWS Game Development
+                        Society to provide advice and support for game development students and alumni. I want to do more, and I am interested in becoming an ambassador for software engineering. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>OpenGL</li>
+            <li>CMake</li>
+            <li>WPF</li>
+            <li>Powershell</li>
+            <li>Linux</li>
+            <li>Docker</li>
+            <li>Continuous Integration</li>
+            <li>Unit Testing</li>
+            <li>Version Control</li>
+
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2019 Stuart Adams
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/stuartdadams" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/stuartdadams" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/stuartdadams" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
